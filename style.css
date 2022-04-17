@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #373b69;
+    font-family: "Poppins",sans-serif;
+    margin: 0;
+}
+header{
+    background-color: #373b69;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    position: static;
+}
+header h1{
+   
+    margin-right: 850px;
+   margin-top: 8px;
+   font-weight: 900;
+   letter-spacing: 2.5px;
+   font-size: 35px;
+  
+   color: #000;
+
+}
+.search{
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    border: 2px solid #22254b;
+    border-radius: 50px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    width: 500px;
+}
+.search::placeholder{
+    color: #8f7de0;
+}
+.search:focus{
+    background-color: #22254b;
+    outline: none;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie{
+    background-color: #373b69;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    margin: 1rem;
+    width: 300px;
+    box-shadow: 5px 4px 7px rgba(0,0,0,0.8);
+}
+.movie img{
+    
+    width: 100%;
+}
+.movie-info{
+    /* color: #eee; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+.movie-info h3{
+    margin: 0;
+}
+.movie-info span{
+    background-color: #22254b;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+}
+.movie-info span.green{
+color: rgb(35, 194, 35);
+}
+.movie-info span.orange{
+    color: orange;
+}
+.movie-info span.red{
+    color: rgb(160, 38, 38);
+}
+.overview{
+    position: absolute;
+    background-color: #fff;
+    font-size: 18px;
+    color: #000;
+    padding: 2rem;
+    max-height: 100%;
+    overflow: auto;
+    transform: translateY(101%);
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition:transform 0.5s ease-in;
+}
+.movie:hover .overview{
+transform: translateY(0);
+}
